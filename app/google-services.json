@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "586242810146",
+    "project_id": "communicationapp-35619",
+    "storage_bucket": "communicationapp-35619.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586242810146:android:55b76a5f80f1c3a42bc57b",
+        "android_client_info": {
+          "package_name": "by.startandroid.communicationappdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586242810146-e6hg3tbntegtmjeqo9dfil4b8n9im8fh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "by.startandroid.communicationappdemo",
+            "certificate_hash": "d19018866350639b2db730705b61343b62501bfd"
+          }
+        },
+        {
+          "client_id": "586242810146-1gshp0t6v66agcaamm3tavh8mcntl72q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaV1GTNgdph7sB6Lm3MYkIFFnvOcyjRls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586242810146-1gshp0t6v66agcaamm3tavh8mcntl72q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

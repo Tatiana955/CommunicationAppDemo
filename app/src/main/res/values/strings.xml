@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CommunicationAppDemo</string>
+    <string name="message_hint">Сообщение…</string>
+    <string name="send">Отправить</string>
+    <string name="add_image">Добавить изображение</string>
+    <string name="image">Ваше изображение</string>
+    <string name="sign_out">Выход</string>
+    <string name="fragment_signIn">Вход</string>
+    <string name="fragment_chat">Чат</string>
+    <string name="failed_to_load_image">Не удалось загрузить изображение.</string>
+    <string name="login_completed_successfully">Вход выполнен успешно!</string>
+    <string name="an_error_occurred_while_logging_in">При входе произошла ошибка</string>
+    <string name="login_canceled">Вход отменен</string>
+    <string name="login_failed">Ошибка входа</string>
+</resources>
