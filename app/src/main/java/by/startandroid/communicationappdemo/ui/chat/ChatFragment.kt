@@ -10,14 +10,15 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import by.startandroid.communicationappdemo.*
+import by.startandroid.communicationappdemo.R
 import by.startandroid.communicationappdemo.data.ChatMessage
 import by.startandroid.communicationappdemo.databinding.FragmentChatBinding
+import by.startandroid.communicationappdemo.ui.chat.dialog.DialogFragment
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.StorageReference
@@ -91,7 +92,7 @@ class ChatFragment : Fragment() {
         val options = FirebaseRecyclerOptions.Builder<ChatMessage>()
                 .setQuery(reference, ChatMessage::class.java)
                 .build()
-        adapter = ChatAdapter(options, getUserName())
+        adapter = ChatAdapter(options, getUserName(), this)
         binding.progressBar.visibility = ProgressBar.INVISIBLE
         manager = LinearLayoutManager(requireContext())
         manager.stackFromEnd = true
@@ -167,6 +168,15 @@ class ChatFragment : Fragment() {
         return if (user != null) {
             user.displayName
         } else ANONYMOUS
+    }
+
+    fun openDialog() {
+        DialogFragment().show(childFragmentManager, DialogFragment.TAG)
+    }
+
+    fun deleteMessage(position: Int) {
+        adapter.getRef(position).removeValue()
+        Snackbar.make(requireView(), R.string.message_delete, Snackbar.LENGTH_SHORT).show()
     }
 
     override fun onDestroyView() {

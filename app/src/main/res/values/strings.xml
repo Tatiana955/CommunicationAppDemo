@@ -12,4 +12,7 @@
     <string name="an_error_occurred_while_logging_in">При входе произошла ошибка</string>
     <string name="login_canceled">Вход отменен</string>
     <string name="login_failed">Ошибка входа</string>
+    <string name="delete">Удалить</string>
+    <string name="message_delete">Сообщение удалено</string>
+    <string name="clear">Очистить</string>
 </resources>

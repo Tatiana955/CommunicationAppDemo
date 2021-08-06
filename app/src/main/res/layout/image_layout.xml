@@ -42,4 +42,14 @@
         app:layout_constraintEnd_toStartOf="@id/imageView"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/deleteImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_delete_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/delete" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

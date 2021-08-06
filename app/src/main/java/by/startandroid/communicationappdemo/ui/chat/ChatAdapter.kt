@@ -20,7 +20,8 @@ import com.google.firebase.storage.ktx.storage
 
 class ChatAdapter(
         private val options: FirebaseRecyclerOptions<ChatMessage>,
-        private val currentUserName: String?
+        private val currentUserName: String?,
+        private val fragment: ChatFragment
 ): FirebaseRecyclerAdapter<ChatMessage, ViewHolder>(options) {
 
     inner class MessageViewHolder(private val binding: MessageLayoutBinding): ViewHolder(binding.root) {
@@ -63,14 +64,31 @@ class ChatAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
+        val messageHolder: MessageViewHolder
+        val imageHolder: ImageMessageViewHolder
+
         return if (viewType == VIEW_TYPE_TEXT) {
             val view = inflater.inflate(R.layout.message_layout, parent, false)
             val binding = MessageLayoutBinding.bind(view)
-            MessageViewHolder(binding)
+            messageHolder = MessageViewHolder(binding)
+            messageHolder.itemView.setOnClickListener {
+                fragment.openDialog()
+            }
+            binding.deleteImageView.setOnClickListener {
+                fragment.deleteMessage(messageHolder.adapterPosition)
+            }
+            messageHolder
         } else {
             val view = inflater.inflate(R.layout.image_layout, parent, false)
             val binding = ImageLayoutBinding.bind(view)
-            ImageMessageViewHolder(binding)
+            imageHolder = ImageMessageViewHolder(binding)
+            imageHolder.itemView.setOnClickListener {
+                fragment.openDialog()
+            }
+            binding.deleteImageView.setOnClickListener {
+                fragment.deleteMessage(imageHolder.adapterPosition)
+            }
+            imageHolder
         }
     }
 

@@ -18,4 +18,10 @@
         android:label="@string/fragment_signIn"
         tools:layout="@layout/fragment_sign_in" />
 
+    <fragment
+        android:id="@+id/dialogFragment"
+        android:name="by.startandroid.communicationappdemo.ui.chat.dialog.DialogFragment"
+        android:label="fragment_dialog"
+        tools:layout="@layout/fragment_dialog" />
+
 </navigation>
