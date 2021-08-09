@@ -1,8 +1,9 @@
-package by.startandroid.communicationappdemo.ui.chat
+package by.startandroid.communicationappdemo.ui.chat.observers
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.AdapterDataObserver
+import by.startandroid.communicationappdemo.ui.chat.ChatAdapter
 
 class ScrollToBottomObserver(
         private val recycler: RecyclerView,

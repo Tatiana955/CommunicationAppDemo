@@ -1,4 +1,4 @@
-package by.startandroid.communicationappdemo.ui.chat
+package by.startandroid.communicationappdemo.ui.chat.observers
 
 import android.text.Editable
 import android.text.TextWatcher

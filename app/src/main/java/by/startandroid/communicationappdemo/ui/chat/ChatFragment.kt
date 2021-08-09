@@ -14,6 +14,8 @@ import by.startandroid.communicationappdemo.R
 import by.startandroid.communicationappdemo.data.ChatMessage
 import by.startandroid.communicationappdemo.databinding.FragmentChatBinding
 import by.startandroid.communicationappdemo.ui.chat.dialog.DialogFragment
+import by.startandroid.communicationappdemo.ui.chat.observers.ButtonObserver
+import by.startandroid.communicationappdemo.ui.chat.observers.ScrollToBottomObserver
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
