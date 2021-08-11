@@ -75,7 +75,7 @@ class ChatAdapter(
                 fragment.openDialog()
             }
             binding.deleteImageView.setOnClickListener {
-                fragment.deleteMessage(messageHolder.adapterPosition)
+                fragment.deleteMessage(messageHolder.bindingAdapterPosition)
             }
             messageHolder
         } else {
@@ -86,7 +86,7 @@ class ChatAdapter(
                 fragment.openDialog()
             }
             binding.deleteImageView.setOnClickListener {
-                fragment.deleteMessage(imageHolder.adapterPosition)
+                fragment.deleteMessage(imageHolder.bindingAdapterPosition)
             }
             imageHolder
         }

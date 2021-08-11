@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_margin="@dimen/text_margin_10"
     tools:context=".ui.chat.dialog.DialogFragment">
 
     <TextView
@@ -13,11 +13,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/clear"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size_18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp" />
+        android:layout_marginStart="@dimen/text_margin_10"
+        android:layout_marginTop="@dimen/text_margin_10" />
 
     <ImageView
         android:id="@+id/clearImageView"
@@ -26,7 +26,7 @@
         android:src="@drawable/ic_baseline_delete_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/clearTextView"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/text_margin_10"
         android:contentDescription="@string/clear" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="text_margin_10">10dp</dimen>
+    <dimen name="text_margin_15">15dp</dimen>
+    <dimen name="text_margin_16">16dp</dimen>
+
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+
+    <dimen name="max_200">200dp</dimen>
+    <dimen name="max_250">250dp</dimen>
+    <dimen name="max_300">300dp</dimen>
+
+    <dimen name="text_size_18">18sp</dimen>
+
+    <dimen name="size_image_36">36dp</dimen>
+    <dimen name="size_image_150">150dp</dimen>
+</resources>

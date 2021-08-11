@@ -5,15 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp">
+    android:layout_margin="@dimen/text_margin_10">
 
     <TextView
         android:id="@+id/messageTextView"
         android:layout_width="wrap_content"
-        android:maxWidth="250dp"
+        android:maxWidth="@dimen/max_250"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:padding="10dp"
+        android:layout_marginStart="@dimen/text_margin_10"
+        android:padding="@dimen/padding_10"
         android:background="@drawable/rounded_message_gray"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@android:color/black"
@@ -25,7 +25,7 @@
         android:id="@+id/messengerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="10dp"
+        android:paddingHorizontal="@dimen/padding_10"
         android:textAppearance="?android:attr/textAppearanceSmall"
         app:layout_constraintStart_toStartOf="@id/messageTextView"
         app:layout_constraintTop_toBottomOf="@id/messageTextView"
@@ -35,7 +35,7 @@
         android:id="@+id/messengerImageView"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="@dimen/text_margin_15"
         android:src="@drawable/ic_baseline_account_circle_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/messageTextView"
@@ -48,7 +48,7 @@
         android:src="@drawable/ic_baseline_delete_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/messengerName"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/text_margin_10"
         android:contentDescription="@string/delete" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,7 +21,13 @@
     <fragment
         android:id="@+id/dialogFragment"
         android:name="by.startandroid.communicationappdemo.ui.chat.dialog.DialogFragment"
-        android:label="fragment_dialog"
+        android:label="@string/fragment_dialog"
         tools:layout="@layout/fragment_dialog" />
+
+    <fragment
+        android:id="@+id/userPageFragment"
+        android:name="by.startandroid.communicationappdemo.ui.userpage.UserPageFragment"
+        android:label="@string/fragment_page"
+        tools:layout="@layout/fragment_user_page" />
 
 </navigation>

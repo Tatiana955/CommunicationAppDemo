@@ -14,7 +14,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorLightGray"
         android:orientation="horizontal"
-        android:paddingHorizontal="10dp">
+        android:paddingHorizontal="@dimen/padding_10">
 
         <ImageView
             android:id="@+id/addImageView"
@@ -29,9 +29,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_margin="10dp"
+            android:layout_margin="@dimen/text_margin_10"
             android:layout_gravity="center"
-            android:padding="10dp"
+            android:padding="@dimen/padding_10"
             android:background="@drawable/edit_text_shadow"
             android:inputType="text"
             android:hint="@string/message_hint"
@@ -62,6 +62,6 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/linearLayout"
         android:background="@android:color/white"
-        android:paddingHorizontal="16dp" />
+        android:paddingHorizontal="@dimen/padding_16" />
 
 </RelativeLayout>

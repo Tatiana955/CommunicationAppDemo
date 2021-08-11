@@ -12,6 +12,7 @@ import by.startandroid.communicationappdemo.ui.chat.ChatFragment
 import by.startandroid.communicationappdemo.ui.chat.dialog.DialogFragment
 import by.startandroid.communicationappdemo.ui.chat.dialog.DialogFragmentListener
 import com.firebase.ui.auth.AuthUI
+import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -23,8 +24,21 @@ class MainActivity : AppCompatActivity(), DialogFragmentListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        setSupportActionBar(binding.toolbar)
         navController = supportFragmentManager.findFragmentById(R.id.navHost)?.findNavController()
+
+        val adapter = AppViewPagerAdapter(this)
+        binding.viewPager.adapter = adapter
+        TabLayoutMediator(binding.tabs, binding.viewPager) { tab, position ->
+            when (position) {
+                0 -> {
+                    tab.text = getString(R.string.fragment_page)
+                }
+                1 -> {
+                    tab.text = getString(R.string.fragment_chat)
+                }
+            }
+        }.attach()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

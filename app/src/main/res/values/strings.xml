@@ -7,6 +7,8 @@
     <string name="sign_out">Выход</string>
     <string name="fragment_signIn">Вход</string>
     <string name="fragment_chat">Чат</string>
+    <string name="fragment_dialog">Диалоговое окно</string>
+    <string name="fragment_page">Страница</string>
     <string name="failed_to_load_image">Не удалось загрузить изображение.</string>
     <string name="login_completed_successfully">Вход выполнен успешно!</string>
     <string name="an_error_occurred_while_logging_in">При входе произошла ошибка</string>
@@ -16,4 +18,5 @@
     <string name="message_delete">Сообщение удалено</string>
     <string name="clear">Очистить</string>
     <string name="message_clear">Очищено</string>
+    <string name="photo">Фото</string>
 </resources>
